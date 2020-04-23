@@ -1,1 +1,291 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@theme-color:
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+section {
+  padding: 4%;
+}
+h1 {
+  font-family: 'Gaegu', cursive;
+  margin: 20px 0;
+ font-size: 60px;
+ text-align: center;
+  width: 100%;
+  background:rgb(202, 23, 122);
+  color:black;
+}
+h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+a {
+  font-size: 1.8rem;
+}
+ul {
+  width: 100%;
+}
+li {
+  float: left;
+  width: 20%;
+}
+  
+
+header { 
+  padding: 2%;
+  background-color: @theme-color;}
+  
+  nav { 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;}
+    
+
+    @media ( max-width: 700px ) { 
+  
+      justify-content: center;
+      align-items: center;
+    } 
+    
+    @media ( max-width: 480px ) { // start mobile breakpoint
+      flex-direction: column;
+    } 
+    
+    a { 
+      color: white;
+      margin: 1%;
+      padding: 2%;
+      text-align: center;
+      
+    } 
+    
+    a:hover {
+      color: lightgray;
+    }
+  } 
+} 
+
+
+header, section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  padding: 50px 10px;
+  background-color:white; 
+}
+
+header nav {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  color: #2A363B;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+}
+
+section {
+  padding: 10px 20px;
+ 
+}
+
+section .about-text {
+  width: 100%;
+  background-color:rgb(202, 23, 122);
+  padding: 1px;
+
+  
+}
+
+h3 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+@media (max-width: 700px) {
+  section .about-text {
+    width: 65%;
+  }
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+.work-text {
+  display: flex;
+  margin: 0 0% 20px;
+  justify-content: space-around;
+  background-color: rgb(202, 23, 122);
+  padding:2%;
+  width: 100%;
+  ;
+  
+}
+
+.work-text .text-container {
+  padding-right: 4%;
+}
+
+.work-text.text-container:last-child {
+  padding-right: 0;
+}
+
+footer {
+  width: 100%;
+
+  color:black;
+}
+
+
+
+}
+
+/*======= Create a selector for the address tag in the contact-section class to have the following styles:
+   line-height: 2;
+*/
+address{
+  line-height:2;
+}
+ 
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
